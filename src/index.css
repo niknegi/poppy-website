@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface: #131313;
+  --color-surface-low: #0E0E0E;
+  --color-surface-high: #2A2A2A;
+  --color-primary: #d8422c;
+  --color-primary-hover: #b53623;
+  --color-bone: #F2F2F2;
+  --color-muted: #888888;
+  --color-ghost: rgba(242, 242, 242, 0.08);
+
+  --font-display: "Helvetica Neue", Arial, sans-serif;
+  --font-body: "Inter", -apple-system, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--color-surface);
+  color: var(--color-bone);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--color-primary);
+  color: var(--color-bone);
+}
+
+::-moz-selection {
+  background: var(--color-primary);
+  color: var(--color-bone);
+}
+
+@layer components {
+  .display-lg {
+    font-family: var(--font-display);
+    font-size: clamp(2.5rem, 6vw, 3.5rem);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.05;
+  }
+
+  .display-md {
+    font-family: var(--font-display);
+    font-size: clamp(1.5rem, 3vw, 2.25rem);
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    line-height: 1.1;
+  }
+
+  .label-sm {
+    font-size: 0.6875rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-primary);
+  }
+}
