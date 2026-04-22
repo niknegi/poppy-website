@@ -186,7 +186,7 @@ export default function HomePage() {
           </p>
           <a
             href="#"
-            className="inline-flex items-center gap-2 bg-gradient-to-br from-primary to-primary-hover px-7 py-3.5 text-sm font-medium text-bone transition-opacity hover:opacity-90"
+            className="inline-flex items-center gap-2 bg-gradient-to-br from-primary to-primary-hover px-7 py-3.5 text-sm font-medium text-bone transition-opacity hover:opacity-90 rounded-lg"
           >
             Install Poppy for Chrome
           </a>
