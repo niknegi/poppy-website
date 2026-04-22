@@ -58,7 +58,7 @@ export default function DocsPage() {
                 <li key={item.id}>
                   <button
                     onClick={() => scrollTo(item.id)}
-                    className={`block w-full px-3 py-2 text-left text-sm transition-colors cursor-pointer ${
+                    className={`block w-full rounded-lg px-3 py-2 text-left text-sm transition-colors cursor-pointer ${
                       activeId === item.id
                         ? 'bg-surface-high text-bone border-l-2 border-primary pl-[calc(0.75rem-2px)]'
                         : 'text-muted hover:bg-surface-high hover:text-bone'

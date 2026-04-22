@@ -42,7 +42,7 @@ export default function Nav() {
           <li>
             <a
               href="#"
-              className="bg-primary px-4 py-2 text-xs font-medium tracking-wide text-bone transition-colors hover:bg-primary-hover"
+              className="rounded-lg bg-primary px-4 py-2 text-xs font-medium tracking-wide text-bone transition-colors hover:bg-primary-hover"
             >
               Get Extension
             </a>
